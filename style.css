@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(0, 39, 69);
+}
+
+
+.content {
+    height: auto;
+    max-width: 600px;
+    width: 80%;
+    margin: 5% auto;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    background-color: rgba(9, 88, 152, 0.415);
+    border-radius: 15px;
+}
+
+#searchSection {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+#name {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#inputSection {
+    flex: 1;
+    min-width: 150px;
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.258);
+    border: none;
+    outline: none;
+    color: white;
+    border-bottom: 1px solid white;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+#searchButton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+#weatherResult {
+    color: black;
+    font-size: 1.1rem;
+}
+
+#weatherResult hr {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+img {
+    align-items: center;
+}
+
+#Himadri {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer {
+    text-align: center;
+    margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+    .content {
+        width: 90%;
+        padding: 15px;
+    }
+
+    #name {
+        font-size: 1.8rem;
+    }
+
+    #inputSection {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #searchSection {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    #inputSection {
+        width: 100%;
+        text-align: center;
+    }
+
+    #searchButton {
+        font-size: 26px;
+    }
+
+    #name {
+        font-size: 1.5rem;
+    }
+}
